@@ -3,9 +3,11 @@
  */
 package sandipanacademy.Test;
 
+import sandipanacademy.TestComponents.BaseTest;
+
 /**
  * 
  */
-public class ForgestPasswordTest {
+public class ForgestPasswordTest extends BaseTest {
 
 }
