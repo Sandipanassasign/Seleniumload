@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sandipanacademy.Test.HomePageTest">
+      <class name="sandipanacademy.Test.ErrorCaptureTest">
         <methods>
           <include name="closeDriver"/>
-          <include name="submitOrder" invocation-numbers="0 1"/>
+          <include name="errorValidation"/>
           <include name="launchUrl"/>
-          <include name="validateMyOrder"/>
         </methods>
-      </class> <!-- sandipanacademy.Test.HomePageTest -->
+      </class> <!-- sandipanacademy.Test.ErrorCaptureTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

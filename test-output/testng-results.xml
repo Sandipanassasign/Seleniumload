@@ -1,54 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="1" failed="2" skipped="1">
+<testng-results ignored="0" total="3" passed="1" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-21T04:04:41 IST" name="Default suite" finished-at="2023-07-21T04:06:13 IST" duration-ms="92320">
+  <suite started-at="2023-07-22T23:21:12 IST" name="Default suite" finished-at="2023-07-22T23:22:13 IST" duration-ms="60371">
     <groups>
-      <group name="DataDrivenTest">
-        <method signature="HomePageTest.submitOrder(java.util.HashMap)[pri:0, instance:sandipanacademy.Test.HomePageTest@3f191845]" name="submitOrder" class="sandipanacademy.Test.HomePageTest"/>
-      </group> <!-- DataDrivenTest -->
+      <group name="onlyerrorvalidation">
+        <method signature="ErrorCaptureTest.errorValidation(java.lang.String,java.lang.String)[pri:0, instance:sandipanacademy.Test.ErrorCaptureTest@3fc2959f]" name="errorValidation" class="sandipanacademy.Test.ErrorCaptureTest"/>
+      </group> <!-- onlyerrorvalidation -->
     </groups>
-    <test started-at="2023-07-21T04:04:41 IST" name="Default test" finished-at="2023-07-21T04:06:13 IST" duration-ms="92320">
-      <class name="sandipanacademy.Test.HomePageTest">
-        <test-method is-config="true" signature="launchUrl()[pri:0, instance:sandipanacademy.Test.HomePageTest@3f191845]" started-at="2023-07-21T04:04:41 IST" name="launchUrl" finished-at="2023-07-21T04:05:01 IST" duration-ms="19239" status="PASS">
+    <test started-at="2023-07-22T23:21:12 IST" name="Default test" finished-at="2023-07-22T23:22:13 IST" duration-ms="60371">
+      <class name="sandipanacademy.Test.ErrorCaptureTest">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:sandipanacademy.Test.ErrorCaptureTest@3fc2959f]" started-at="2023-07-22T23:21:12 IST" name="launchUrl" finished-at="2023-07-22T23:22:00 IST" duration-ms="47899" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchUrl -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:sandipanacademy.Test.HomePageTest@3f191845]" started-at="2023-07-21T04:05:01 IST" name="submitOrder" data-provider="getData" finished-at="2023-07-21T04:05:06 IST" duration-ms="5500" status="FAIL">
+        <test-method signature="errorValidation(java.lang.String,java.lang.String)[pri:0, instance:sandipanacademy.Test.ErrorCaptureTest@3fc2959f]" started-at="2023-07-22T23:22:00 IST" name="errorValidation" data-provider="getData" finished-at="2023-07-22T23:22:02 IST" duration-ms="1313" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{product2=IPHONE 13 PRO, product1=ZARA COAT 3, password=@Sandy123, email=Testuser32@yopmail.com}]]>
+                <![CDATA[baralsandipan17@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[@Sandy123]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorValidation -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:sandipanacademy.Test.ErrorCaptureTest@3fc2959f]" started-at="2023-07-22T23:22:02 IST" name="closeDriver" finished-at="2023-07-22T23:22:02 IST" duration-ms="223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:sandipanacademy.Test.ErrorCaptureTest@3fc2959f]" started-at="2023-07-22T23:22:02 IST" name="launchUrl" finished-at="2023-07-22T23:22:08 IST" duration-ms="6026" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[element click intercepted: Element <button _ngcontent-whd-c34="" class="btn w-10 rounded" style="float: right;">...</button> is not clickable at point (1219, 444). Other element would receive the click: <div _ngcontent-whd-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
-  (Session info: chrome=115.0.5790.99)
+              <![CDATA[unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=115.0.5790.102)
 Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [03dd07b925281f70bc467b91a687c861, clickElement {id=1B79AD01CA6E3F1731C2F16DF17FEAB6_element_11}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.99, chrome: {chromedriverVersion: 115.0.5790.98 (4eacc220b55f..., userDataDir: C:\Users\Sandipan\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50751}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50751/devtoo..., se:cdpVersion: 115.0.5790.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on windows (03dd07b925281f70bc467b91a687c861)] -> xpath: //div[@class='card-body'] /h5 /b]] -> xpath: //div[3]//div[1]//div[1]//button[2]]
-Session ID: 03dd07b925281f70bc467b91a687c861]]>
+Command: [27a1e62aa3ce5bb5fde0f2c1a556dd06, get {url=https://rahulshettyacademy.com/client/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 115.0.5790.102 (90efd4b0ad6..., userDataDir: C:\Users\susha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52072}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52072/devtoo..., se:cdpVersion: 115.0.5790.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 27a1e62aa3ce5bb5fde0f2c1a556dd06]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-whd-c34="" class="btn w-10 rounded" style="float: right;">...</button> is not clickable at point (1219, 444). Other element would receive the click: <div _ngcontent-whd-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
-  (Session info: chrome=115.0.5790.99)
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=115.0.5790.102)
 Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [03dd07b925281f70bc467b91a687c861, clickElement {id=1B79AD01CA6E3F1731C2F16DF17FEAB6_element_11}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.99, chrome: {chromedriverVersion: 115.0.5790.98 (4eacc220b55f..., userDataDir: C:\Users\Sandipan\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50751}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50751/devtoo..., se:cdpVersion: 115.0.5790.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on windows (03dd07b925281f70bc467b91a687c861)] -> xpath: //div[@class='card-body'] /h5 /b]] -> xpath: //div[3]//div[1]//div[1]//button[2]]
-Session ID: 03dd07b925281f70bc467b91a687c861
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+Command: [27a1e62aa3ce5bb5fde0f2c1a556dd06, get {url=https://rahulshettyacademy.com/client/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 115.0.5790.102 (90efd4b0ad6..., userDataDir: C:\Users\susha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52072}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52072/devtoo..., se:cdpVersion: 115.0.5790.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 27a1e62aa3ce5bb5fde0f2c1a556dd06
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -56,16 +67,17 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at sandipanacademy.pageobjects.ProductCatalog.addProductToCart1(ProductCatalog.java:67)
-at sandipanacademy.Test.HomePageTest.submitOrder(HomePageTest.java:53)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:295)
+at sandipanacademy.pageobjects.LandingPage.goTOURL(LandingPage.java:73)
+at sandipanacademy.TestComponents.BaseTest.launchUrl(BaseTest.java:132)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
@@ -90,53 +102,48 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:sandipanacademy.Test.HomePageTest@3f191845]" started-at="2023-07-21T04:05:06 IST" name="closeDriver" finished-at="2023-07-21T04:05:07 IST" duration-ms="290" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="launchUrl()[pri:0, instance:sandipanacademy.Test.HomePageTest@3f191845]" started-at="2023-07-21T04:05:07 IST" name="launchUrl" finished-at="2023-07-21T04:05:38 IST" duration-ms="31396" status="PASS">
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchUrl -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:sandipanacademy.Test.HomePageTest@3f191845]" started-at="2023-07-21T04:05:38 IST" name="submitOrder" data-provider="getData" finished-at="2023-07-21T04:05:43 IST" duration-ms="5567" status="FAIL">
+        <test-method signature="errorValidation(java.lang.String,java.lang.String)[pri:0, instance:sandipanacademy.Test.ErrorCaptureTest@3fc2959f]" started-at="2023-07-22T23:22:08 IST" name="errorValidation" data-provider="getData" finished-at="2023-07-22T23:22:08 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{product2=ZARA COAT 3, product1=IPHONE 13 PRO, password=@Sandy123, email=Testuser33@yopmail.com}]]>
+                <![CDATA[baralsandipan18@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[@Sandy123]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[element click intercepted: Element <button _ngcontent-wqf-c34="" class="btn w-10 rounded" style="float: right;">...</button> is not clickable at point (1219, 444). Other element would receive the click: <div _ngcontent-wqf-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
-  (Session info: chrome=115.0.5790.99)
+              <![CDATA[unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=115.0.5790.102)
 Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [95b75ac2484e53a46f5bd23235c88ebd, clickElement {id=4BA882BD38A886409D8DE0CD0DDA34A1_element_13}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.99, chrome: {chromedriverVersion: 115.0.5790.98 (4eacc220b55f..., userDataDir: C:\Users\Sandipan\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50781/devtoo..., se:cdpVersion: 115.0.5790.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on windows (95b75ac2484e53a46f5bd23235c88ebd)] -> xpath: //div[@class='card-body'] /h5 /b]] -> xpath: //div[3]//div[1]//div[1]//button[2]]
-Session ID: 95b75ac2484e53a46f5bd23235c88ebd]]>
+Command: [27a1e62aa3ce5bb5fde0f2c1a556dd06, get {url=https://rahulshettyacademy.com/client/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 115.0.5790.102 (90efd4b0ad6..., userDataDir: C:\Users\susha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52072}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52072/devtoo..., se:cdpVersion: 115.0.5790.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 27a1e62aa3ce5bb5fde0f2c1a556dd06]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-wqf-c34="" class="btn w-10 rounded" style="float: right;">...</button> is not clickable at point (1219, 444). Other element would receive the click: <div _ngcontent-wqf-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
-  (Session info: chrome=115.0.5790.99)
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=115.0.5790.102)
 Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [95b75ac2484e53a46f5bd23235c88ebd, clickElement {id=4BA882BD38A886409D8DE0CD0DDA34A1_element_13}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.99, chrome: {chromedriverVersion: 115.0.5790.98 (4eacc220b55f..., userDataDir: C:\Users\Sandipan\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50781/devtoo..., se:cdpVersion: 115.0.5790.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on windows (95b75ac2484e53a46f5bd23235c88ebd)] -> xpath: //div[@class='card-body'] /h5 /b]] -> xpath: //div[3]//div[1]//div[1]//button[2]]
-Session ID: 95b75ac2484e53a46f5bd23235c88ebd
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+Command: [27a1e62aa3ce5bb5fde0f2c1a556dd06, get {url=https://rahulshettyacademy.com/client/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 115.0.5790.102 (90efd4b0ad6..., userDataDir: C:\Users\susha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52072}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52072/devtoo..., se:cdpVersion: 115.0.5790.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 27a1e62aa3ce5bb5fde0f2c1a556dd06
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -144,16 +151,17 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at sandipanacademy.pageobjects.ProductCatalog.addProductToCart1(ProductCatalog.java:67)
-at sandipanacademy.Test.HomePageTest.submitOrder(HomePageTest.java:53)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:295)
+at sandipanacademy.pageobjects.LandingPage.goTOURL(LandingPage.java:73)
+at sandipanacademy.TestComponents.BaseTest.launchUrl(BaseTest.java:132)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
@@ -178,43 +186,78 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:sandipanacademy.Test.HomePageTest@3f191845]" started-at="2023-07-21T04:05:44 IST" name="closeDriver" finished-at="2023-07-21T04:05:44 IST" duration-ms="191" status="PASS">
+        </test-method> <!-- errorValidation -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:sandipanacademy.Test.ErrorCaptureTest@3fc2959f]" started-at="2023-07-22T23:22:08 IST" name="closeDriver" finished-at="2023-07-22T23:22:08 IST" duration-ms="106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="launchUrl()[pri:0, instance:sandipanacademy.Test.HomePageTest@3f191845]" started-at="2023-07-21T04:05:44 IST" name="launchUrl" finished-at="2023-07-21T04:06:00 IST" duration-ms="16150" status="PASS">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:sandipanacademy.Test.ErrorCaptureTest@3fc2959f]" started-at="2023-07-22T23:22:08 IST" name="launchUrl" finished-at="2023-07-22T23:22:13 IST" duration-ms="4497" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchUrl -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:sandipanacademy.Test.HomePageTest@3f191845]" started-at="2023-07-21T04:06:00 IST" name="submitOrder" data-provider="getData" finished-at="2023-07-21T04:06:13 IST" duration-ms="12857" status="PASS">
+        <test-method signature="errorValidation(java.lang.String,java.lang.String)[pri:0, instance:sandipanacademy.Test.ErrorCaptureTest@3fc2959f]" started-at="2023-07-22T23:22:13 IST" name="errorValidation" data-provider="getData" finished-at="2023-07-22T23:22:13 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{product2=ZARA COAT 3, product1=IPHONE 13 PRO, password=@Sandy123, email=Testuser34@yopmail.com}]]>
+                <![CDATA[baralsandipan100@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[@Sandy123]]>
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:sandipanacademy.Test.HomePageTest@3f191845]" started-at="2023-07-21T04:06:13 IST" name="closeDriver" finished-at="2023-07-21T04:06:13 IST" duration-ms="343" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-        <test-method signature="validateMyOrder(java.util.HashMap)[pri:0, instance:sandipanacademy.Test.HomePageTest@3f191845]" started-at="2023-07-21T04:06:13 IST" name="validateMyOrder" finished-at="2023-07-21T04:06:13 IST" depends-on-methods="sandipanacademy.Test.HomePageTest.submitOrder" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Method sandipanacademy.Test.HomePageTest.validateMyOrder() on instance sandipanacademy.Test.HomePageTest@3f191845 depends on not successfully finished methods 
-[sandipanacademy.Test.HomePageTest.submitOrder() on instance sandipanacademy.Test.HomePageTest@3f191845]]]>
+              <![CDATA[unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=115.0.5790.102)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [27a1e62aa3ce5bb5fde0f2c1a556dd06, get {url=https://rahulshettyacademy.com/client/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 115.0.5790.102 (90efd4b0ad6..., userDataDir: C:\Users\susha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52072}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52072/devtoo..., se:cdpVersion: 115.0.5790.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 27a1e62aa3ce5bb5fde0f2c1a556dd06]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method sandipanacademy.Test.HomePageTest.validateMyOrder() on instance sandipanacademy.Test.HomePageTest@3f191845 depends on not successfully finished methods 
-[sandipanacademy.Test.HomePageTest.submitOrder() on instance sandipanacademy.Test.HomePageTest@3f191845]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=115.0.5790.102)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [27a1e62aa3ce5bb5fde0f2c1a556dd06, get {url=https://rahulshettyacademy.com/client/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.102, chrome: {chromedriverVersion: 115.0.5790.102 (90efd4b0ad6..., userDataDir: C:\Users\susha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52072}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52072/devtoo..., se:cdpVersion: 115.0.5790.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 27a1e62aa3ce5bb5fde0f2c1a556dd06
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:295)
+at sandipanacademy.pageobjects.LandingPage.goTOURL(LandingPage.java:73)
+at sandipanacademy.TestComponents.BaseTest.launchUrl(BaseTest.java:132)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
@@ -235,11 +278,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateMyOrder -->
-      </class> <!-- sandipanacademy.Test.HomePageTest -->
+        </test-method> <!-- errorValidation -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:sandipanacademy.Test.ErrorCaptureTest@3fc2959f]" started-at="2023-07-22T23:22:13 IST" name="closeDriver" finished-at="2023-07-22T23:22:13 IST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- sandipanacademy.Test.ErrorCaptureTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
