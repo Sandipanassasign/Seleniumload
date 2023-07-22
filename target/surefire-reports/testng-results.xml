@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-16T23:46:36 IST" name="Suite" finished-at="2023-07-16T23:54:34 IST" duration-ms="478315">
+    <groups>
+      <group name="onlyerrorvalidation">
+        <method signature="ErrorCaptureTest.errorValidation(java.lang.String,java.lang.String)[pri:0, instance:sandipanacademy.Test.ErrorCaptureTest@66ea810]" name="errorValidation" class="sandipanacademy.Test.ErrorCaptureTest"/>
+      </group> <!-- onlyerrorvalidation -->
+      <group name="DataDrivenTest">
+        <method signature="HomePageTest.submitOrder(java.util.HashMap)[pri:0, instance:sandipanacademy.Test.HomePageTest@740fb309]" name="submitOrder" class="sandipanacademy.Test.HomePageTest"/>
+      </group> <!-- DataDrivenTest -->
+    </groups>
+    <test started-at="2023-07-16T23:46:36 IST" name="HomePageTest" finished-at="2023-07-16T23:50:58 IST" duration-ms="262216">
+      <class name="sandipanacademy.Test.HomePageTest">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:sandipanacademy.Test.HomePageTest@740fb309]" started-at="2023-07-16T23:46:36 IST" name="launchUrl" finished-at="2023-07-16T23:47:15 IST" duration-ms="38921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:sandipanacademy.Test.HomePageTest@740fb309]" started-at="2023-07-16T23:47:15 IST" name="submitOrder" data-provider="getData" finished-at="2023-07-16T23:47:28 IST" duration-ms="12913" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{product2=IPHONE 13 PRO, product1=ZARA COAT 3, password=@Sandy123, email=Testuser32@yopmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:sandipanacademy.Test.HomePageTest@740fb309]" started-at="2023-07-16T23:47:28 IST" name="closeDriver" finished-at="2023-07-16T23:47:29 IST" duration-ms="457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:sandipanacademy.Test.HomePageTest@740fb309]" started-at="2023-07-16T23:47:29 IST" name="launchUrl" finished-at="2023-07-16T23:48:01 IST" duration-ms="32222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:sandipanacademy.Test.HomePageTest@740fb309]" started-at="2023-07-16T23:48:01 IST" name="submitOrder" data-provider="getData" finished-at="2023-07-16T23:48:14 IST" duration-ms="13114" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{product2=ZARA COAT 3, product1=IPHONE 13 PRO, password=@Sandy123, email=Testuser33@yopmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:sandipanacademy.Test.HomePageTest@740fb309]" started-at="2023-07-16T23:48:14 IST" name="closeDriver" finished-at="2023-07-16T23:48:15 IST" duration-ms="464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:sandipanacademy.Test.HomePageTest@740fb309]" started-at="2023-07-16T23:48:15 IST" name="launchUrl" finished-at="2023-07-16T23:48:51 IST" duration-ms="36255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:sandipanacademy.Test.HomePageTest@740fb309]" started-at="2023-07-16T23:48:51 IST" name="submitOrder" data-provider="getData" finished-at="2023-07-16T23:49:04 IST" duration-ms="13516" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{product2=ZARA COAT 3, product1=IPHONE 13 PRO, password=@Sandy123, email=Testuser34@yopmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:sandipanacademy.Test.HomePageTest@740fb309]" started-at="2023-07-16T23:49:04 IST" name="closeDriver" finished-at="2023-07-16T23:49:05 IST" duration-ms="646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:sandipanacademy.Test.HomePageTest@740fb309]" started-at="2023-07-16T23:49:05 IST" name="launchUrl" finished-at="2023-07-16T23:49:41 IST" duration-ms="36011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="validateMyOrder(java.util.HashMap)[pri:0, instance:sandipanacademy.Test.HomePageTest@740fb309]" started-at="2023-07-16T23:49:41 IST" name="validateMyOrder" data-provider="getData" finished-at="2023-07-16T23:49:43 IST" depends-on-methods="sandipanacademy.Test.HomePageTest.submitOrder" duration-ms="1763" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{product2=IPHONE 13 PRO, product1=ZARA COAT 3, password=@Sandy123, email=Testuser32@yopmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMyOrder -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:sandipanacademy.Test.HomePageTest@740fb309]" started-at="2023-07-16T23:49:43 IST" name="closeDriver" finished-at="2023-07-16T23:49:43 IST" duration-ms="433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:sandipanacademy.Test.HomePageTest@740fb309]" started-at="2023-07-16T23:49:43 IST" name="launchUrl" finished-at="2023-07-16T23:50:19 IST" duration-ms="36126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="validateMyOrder(java.util.HashMap)[pri:0, instance:sandipanacademy.Test.HomePageTest@740fb309]" started-at="2023-07-16T23:50:19 IST" name="validateMyOrder" data-provider="getData" finished-at="2023-07-16T23:50:21 IST" depends-on-methods="sandipanacademy.Test.HomePageTest.submitOrder" duration-ms="1276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{product2=ZARA COAT 3, product1=IPHONE 13 PRO, password=@Sandy123, email=Testuser33@yopmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMyOrder -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:sandipanacademy.Test.HomePageTest@740fb309]" started-at="2023-07-16T23:50:21 IST" name="closeDriver" finished-at="2023-07-16T23:50:21 IST" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:sandipanacademy.Test.HomePageTest@740fb309]" started-at="2023-07-16T23:50:21 IST" name="launchUrl" finished-at="2023-07-16T23:50:57 IST" duration-ms="35672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="validateMyOrder(java.util.HashMap)[pri:0, instance:sandipanacademy.Test.HomePageTest@740fb309]" started-at="2023-07-16T23:50:57 IST" name="validateMyOrder" data-provider="getData" finished-at="2023-07-16T23:50:58 IST" depends-on-methods="sandipanacademy.Test.HomePageTest.submitOrder" duration-ms="1261" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{product2=ZARA COAT 3, product1=IPHONE 13 PRO, password=@Sandy123, email=Testuser34@yopmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMyOrder -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:sandipanacademy.Test.HomePageTest@740fb309]" started-at="2023-07-16T23:50:58 IST" name="closeDriver" finished-at="2023-07-16T23:50:58 IST" duration-ms="248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- sandipanacademy.Test.HomePageTest -->
+    </test> <!-- HomePageTest -->
+    <test started-at="2023-07-16T23:50:59 IST" name="ErrorCaptureTest" finished-at="2023-07-16T23:52:48 IST" duration-ms="109214">
+      <class name="sandipanacademy.Test.ErrorCaptureTest">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:sandipanacademy.Test.ErrorCaptureTest@66ea810]" started-at="2023-07-16T23:50:59 IST" name="launchUrl" finished-at="2023-07-16T23:51:34 IST" duration-ms="35621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="errorValidation(java.lang.String,java.lang.String)[pri:0, instance:sandipanacademy.Test.ErrorCaptureTest@66ea810]" started-at="2023-07-16T23:51:34 IST" name="errorValidation" data-provider="getData" finished-at="2023-07-16T23:51:35 IST" duration-ms="889" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[baralsandipan17@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[@Sandy123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorValidation -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:sandipanacademy.Test.ErrorCaptureTest@66ea810]" started-at="2023-07-16T23:51:35 IST" name="closeDriver" finished-at="2023-07-16T23:51:35 IST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:sandipanacademy.Test.ErrorCaptureTest@66ea810]" started-at="2023-07-16T23:51:35 IST" name="launchUrl" finished-at="2023-07-16T23:52:11 IST" duration-ms="35217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="errorValidation(java.lang.String,java.lang.String)[pri:0, instance:sandipanacademy.Test.ErrorCaptureTest@66ea810]" started-at="2023-07-16T23:52:11 IST" name="errorValidation" data-provider="getData" finished-at="2023-07-16T23:52:11 IST" duration-ms="681" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[baralsandipan18@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[@Sandy123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorValidation -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:sandipanacademy.Test.ErrorCaptureTest@66ea810]" started-at="2023-07-16T23:52:11 IST" name="closeDriver" finished-at="2023-07-16T23:52:12 IST" duration-ms="276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:sandipanacademy.Test.ErrorCaptureTest@66ea810]" started-at="2023-07-16T23:52:12 IST" name="launchUrl" finished-at="2023-07-16T23:52:47 IST" duration-ms="35291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="errorValidation(java.lang.String,java.lang.String)[pri:0, instance:sandipanacademy.Test.ErrorCaptureTest@66ea810]" started-at="2023-07-16T23:52:47 IST" name="errorValidation" data-provider="getData" finished-at="2023-07-16T23:52:48 IST" duration-ms="786" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[baralsandipan100@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[@Sandy123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorValidation -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:sandipanacademy.Test.ErrorCaptureTest@66ea810]" started-at="2023-07-16T23:52:48 IST" name="closeDriver" finished-at="2023-07-16T23:52:48 IST" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- sandipanacademy.Test.ErrorCaptureTest -->
+    </test> <!-- ErrorCaptureTest -->
+    <test started-at="2023-07-16T23:52:48 IST" name="UserRegistrationTest" finished-at="2023-07-16T23:54:34 IST" duration-ms="105921">
+      <class name="sandipanacademy.Test.UserRegistrationTest">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:sandipanacademy.Test.UserRegistrationTest@2f953efd]" started-at="2023-07-16T23:52:48 IST" name="launchUrl" finished-at="2023-07-16T23:53:20 IST" duration-ms="32130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="registerUser(java.lang.String)[pri:0, instance:sandipanacademy.Test.UserRegistrationTest@2f953efd]" started-at="2023-07-16T23:53:20 IST" name="registerUser" data-provider="getEmailData" finished-at="2023-07-16T23:53:22 IST" duration-ms="1950" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testuser98@yopmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUser -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:sandipanacademy.Test.UserRegistrationTest@2f953efd]" started-at="2023-07-16T23:53:22 IST" name="closeDriver" finished-at="2023-07-16T23:53:23 IST" duration-ms="253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:sandipanacademy.Test.UserRegistrationTest@2f953efd]" started-at="2023-07-16T23:53:23 IST" name="launchUrl" finished-at="2023-07-16T23:53:55 IST" duration-ms="32235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="registerUser(java.lang.String)[pri:0, instance:sandipanacademy.Test.UserRegistrationTest@2f953efd]" started-at="2023-07-16T23:53:55 IST" name="registerUser" data-provider="getEmailData" finished-at="2023-07-16T23:53:57 IST" duration-ms="1836" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testuser99@yopmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUser -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:sandipanacademy.Test.UserRegistrationTest@2f953efd]" started-at="2023-07-16T23:53:57 IST" name="closeDriver" finished-at="2023-07-16T23:53:57 IST" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:sandipanacademy.Test.UserRegistrationTest@2f953efd]" started-at="2023-07-16T23:53:57 IST" name="launchUrl" finished-at="2023-07-16T23:54:32 IST" duration-ms="35134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="registerUser(java.lang.String)[pri:0, instance:sandipanacademy.Test.UserRegistrationTest@2f953efd]" started-at="2023-07-16T23:54:32 IST" name="registerUser" data-provider="getEmailData" finished-at="2023-07-16T23:54:34 IST" duration-ms="1853" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testuser100@yopmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUser -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:sandipanacademy.Test.UserRegistrationTest@2f953efd]" started-at="2023-07-16T23:54:34 IST" name="closeDriver" finished-at="2023-07-16T23:54:34 IST" duration-ms="271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- sandipanacademy.Test.UserRegistrationTest -->
+    </test> <!-- UserRegistrationTest -->
+  </suite> <!-- Suite -->
+</testng-results>

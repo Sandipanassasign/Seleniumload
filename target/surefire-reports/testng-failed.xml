@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="sandipanacademy.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="HomePageTest(failed)" verbose="0">
+    <classes>
+      <class name="sandipanacademy.Test.HomePageTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="submitOrder"/>
+          <include name="launchUrl"/>
+          <include name="validateMyOrder"/>
+        </methods>
+      </class> <!-- sandipanacademy.Test.HomePageTest -->
+    </classes>
+  </test> <!-- HomePageTest(failed) -->
+  <test thread-count="5" name="ErrorCaptureTest(failed)" verbose="0">
+    <classes>
+      <class name="sandipanacademy.Test.ErrorCaptureTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="errorValidation"/>
+          <include name="launchUrl"/>
+        </methods>
+      </class> <!-- sandipanacademy.Test.ErrorCaptureTest -->
+    </classes>
+  </test> <!-- ErrorCaptureTest(failed) -->
+  <test thread-count="5" name="UserRegistrationTest(failed)" verbose="0">
+    <classes>
+      <class name="sandipanacademy.Test.UserRegistrationTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="launchUrl"/>
+          <include name="registerUser"/>
+        </methods>
+      </class> <!-- sandipanacademy.Test.UserRegistrationTest -->
+    </classes>
+  </test> <!-- UserRegistrationTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
