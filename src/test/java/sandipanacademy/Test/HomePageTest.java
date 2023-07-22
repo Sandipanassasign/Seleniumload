@@ -11,14 +11,13 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import sandipanacademy.TestComponents.BaseTest;
-import sandipanacademy.TestComponents.BaseTest_withSelGridSupport;
 import sandipanacademy.pageobjects.CartPage;
 import sandipanacademy.pageobjects.MyOrderPage;
 import sandipanacademy.pageobjects.PaymentsPage;
 import sandipanacademy.pageobjects.ProductCatalog;
 import sandipanacademy.pageobjects.ThankYouPage;
 
-public class HomePageTest extends BaseTest_withSelGridSupport{
+public class HomePageTest extends BaseTest{
 	
 	
 	
